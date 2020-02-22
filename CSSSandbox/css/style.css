@@ -1,0 +1,7 @@
+/* Format is you have a selector, in this case "h3." Then you have curly braces
+calles declaration start and end. Inside you have the property, which is color,
+and value, which is blue. The semicolon is the decleration seperator */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
