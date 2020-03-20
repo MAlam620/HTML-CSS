@@ -6,11 +6,12 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
 }
 
 .menu{
     color: white;
-    background: darkslategrey;
+    background: #333;
     padding: 0.75rem;
     display: flex;
     justify-content: space-between;
@@ -45,7 +46,7 @@ body{
     padding-right: 0.5rem;
 }
 
-.menu span, i{
+.menu span, .menu i{
     color: #93cb52;
 }
 
@@ -64,3 +65,79 @@ body{
     align-items: center;
     background-color: rgb(0,0,0,0.4);
 }
+
+#main #content #content-text{
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+#main #content #content-text h1{
+    font-size: 4rem;
+}
+
+#main #content #content-text p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+#main #content #content-text #readbtn{
+    color: white;
+    background: #93cb52;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#what{
+    color: black;
+    background: #f4f4f4;
+    padding-top: 25px;
+    text-align: center; 
+    font-size: 1.5rem;
+    
+}
+
+i{
+    color: black;
+}
+
+#what span{
+    color: #93cb52;
+}
+
+#what h1{
+    
+}
+
+#what-items .container{
+    width: 1100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+}
+
+#what-items .container .item{
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    text-align: left;
+    margin-right: 20px;
+}
+#what-items .container i{
+    background:  #93cb52;
+    border-radius: 50%;
+    padding: 20px;
+    align-self: center;
+    margin-right: 20px;
+}
+
+
+
+
+
+
