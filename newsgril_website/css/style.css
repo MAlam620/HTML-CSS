@@ -1,0 +1,250 @@
+/* Reset the document */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+/* Colors to use */
+
+:root{
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Staatliches', sans-serif;
+    font-weight: bold;
+}
+
+/* Label Styling */
+
+.sports-label{
+    background: var(--sports-color);
+    width: 59px;
+    color: white;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+.entertainment-label{
+    background: var(--ent-color);
+    display: inline-block;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+
+.technology-label{
+    background: var(--tech-color);
+    display: inline-block;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+/* Navbar styling */
+
+#navbar{
+    margin: 20px 0px;
+    
+}
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container img{
+    height: 45px;
+}
+a{
+    text-decoration: none;
+}
+
+i{
+    color: lightslategray;
+}
+
+#nav-buttons{
+    display: flex;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+/* Button styling */
+.btn-home{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+}
+
+.btn-home:hover{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.btn-about{
+    display: inline-block;
+    color: var(--dark-color);
+    padding: 10px 15px;
+}
+
+.btn-about:hover{
+    background-color: var(--light-color);
+}
+
+
+/* Sports Article Area */
+#sports-article{
+    width: 100%;
+}
+
+.image{
+    background-image: url("/img/featured.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 70vh;
+}
+
+.image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#sports-article .content{
+    color: #FFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: var(--max-width);
+    justify-content: center;
+    align-items: flex-start; 
+    margin: auto;
+}
+
+#sports-article .image .content h1{
+    font-size: 2rem;
+}
+
+#sports-article .image .content .btn-home{
+    margin-top: 10px;
+}
+
+/* Editor picks styling */
+
+#editor-picks{
+    background-color: var(--light-color);
+    height: 1100px;
+}
+
+#editor-picks .container{
+    padding-top: 30px;
+}
+
+#editor-picks .editor-container{
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    height: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-gap: 10px;
+    grid-template-areas: "article-1 article-1 article-2"
+                         "article-3 article-4 article-5"
+                         "article-6 article-7 article-7";
+}
+
+/* Article 1 styling */
+#editor-picks .editor-container #article-1{
+    grid-area: article-1;
+}
+#editor-picks .editor-container img{
+    height: 250px;
+    max-width: 350px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#editor-picks .editor-container #article-1 img{
+    padding-bottom: 20px;
+}
+
+
+.article-content{
+    padding-left: 20px;
+}
+
+#editor-picks .editor-container #article-1{
+    display: flex;
+    background: white;
+    text-align: left;
+}
+
+
+/* Article 2 styling */
+#editor-picks .editor-container #article-2{
+    background: var(--dark-color);
+    color: white;
+    text-align: left;
+    grid-area: article-2;
+}
+
+
+/* Row 2 styling with article 3 */
+#editor-picks .editor-container #article-3,
+#editor-picks .editor-container #article-4,
+#editor-picks .editor-container #article-5{
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Row 3 styling */
+
+#editor-picks .editor-container #article-6{
+    background: var(--primary-color);
+    color: white;
+}
+
+#editor-picks .editor-container #article-7{
+    grid-area: article-7;
+    display: flex;
+    background: white;
+}
+
+#editor-picks .editor-container #article-7 img{
+    margin-bottom: 20px;
+}
